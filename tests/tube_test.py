@@ -38,7 +38,7 @@ class TestTube:
     def test_run_nls(self):
         sys = Tube("sys")
 
-        sys.add_driver(NonLinearSolver('nls'))
+        sys.add_driver(NonLinearSolver("nls"))
         sys.run_drivers()
 
         assert sys.geom_hot.d_in > sys.geom_hot.d_exit

@@ -44,7 +44,7 @@ class TubeAero(System):
         self.add_inward("length", 0.1, unit="m**2")
 
     def compute(self):
-        rho = 1000.
+        rho = 1000.0
 
         # nominal output computation from Darcy-Weisbach equation
         self.fl_out.W = self.fl_in.W
@@ -55,7 +55,7 @@ class TubeAero(System):
         self.fl_out.Pt = self.fl_in.Pt - self.f * (self.length / d_in) * (rho * v_in**2 / 2)
 
         # static pressure
-        self.ps_in = self.fl_in.Pt - 0.5 * rho * v_in ** 2
+        self.ps_in = self.fl_in.Pt - 0.5 * rho * v_in**2
 
         v_exit = self.fl_out.W / (self.area_exit * rho)
-        self.ps_exit = self.fl_out.Pt - 0.5 * rho * v_exit ** 2
+        self.ps_exit = self.fl_out.Pt - 0.5 * rho * v_exit**2

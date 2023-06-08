@@ -28,7 +28,7 @@ class TubeGeom(System):
         # inwards
         self.add_inward("d_in", 0.1, unit="m")
         self.add_inward("d_exit", 0.1, unit="m")
-        self.add_inward("length", 1., unit="m")
+        self.add_inward("length", 1.0, unit="m")
 
         # aero
         self.add_outward("area_in", 0.1, unit="m**2")

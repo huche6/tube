@@ -34,8 +34,8 @@ class TubeMech(System):
 
         # mech
         self.add_inward("E", 0.1e9, unit="pa")
-        self.add_outward("eps_r_in", 0., unit="")
-        self.add_outward("eps_r_exit", 0., unit="")
+        self.add_outward("eps_r_in", 0.0, unit="")
+        self.add_outward("eps_r_exit", 0.0, unit="")
 
         # aero
         self.add_inward("ps_in", 1e5, unit="pa")
