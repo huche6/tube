@@ -1,0 +1,13 @@
+name: tube
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pytest
+  - flake8
+  - isort
+  - black
+  - pre-commit
+  - cosapp
+  - jupyterlab
+  - pyturbo
