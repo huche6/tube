@@ -3,3 +3,5 @@ flake8
 isort
 black
 pre-commit
+cosapp
+pyturbo
